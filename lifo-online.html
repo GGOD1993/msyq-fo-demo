@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<style type="text/css">
+body {
+	margin:0;
+}
+.wrapper {width:100%; height:auto; margin:0 auto;}
+p {margin:0; padding:0; color:#333333; font-family:宋体; font-size:1rem;}
+ul {
+	position: fixed;
+	bottom: 3rem;
+	margin:0; 
+	padding:0; 
+	list-style-type:none; 
+	width:100%; 
+	height:16px; 
+	border-bottom:#DDDDDD solid 1px;
+}
+li {
+	margin:0; 
+	padding:0; 
+	width: 50%;.0
+	height:3rem; 
+	float:left; 
+	text-align: center;
+	font-family:Verdana, Geneva, sans-serif; 
+	font-size:1rem;
+	line-height:3rem;
+	color:#000000; 
+	background-color:#F4F4F4; 
+	cursor:pointer;
+}
+.one {width:100%; padding-top:20px; display:none; }
+.blue {color:#58A200; background-color:#8C5C5C;}
+.white {color:#000000; background-color:#F4F4F4;}
+</style>	
+<body>
+  <div class="wrapper">
+    <ul>
+      <li id="id0" onclick="showTab(0)" class="blue">礼佛</li>
+      <li id="id1" onclick="showTab(1)" class="blue">回向</li>
+    </ul>
+    <div class="one" id="tab0" style="display:block">
+      <p>内容1</p>
+    </div>
+    <div class="one" id="tab1">
+      <p>内容2</p>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  function showTab(num) {
+    for( i = 0; i < 2; i++) {
+      document.getElementById("tab" + i).style.display="none";
+      document.getElementById("id" + i).className="white";
+    }
+    document.getElementById("tab" + num).style.display = "block";
+    document.getElementById("id" + num).className = "blue";
+  }
+
+  var rootFontSize = 64 * document.body.clientWidth / 1440;
+  document.getElementsByTagName('html')[0].setAttribute('style', 'font-size: ' + rootFontSize + 'px;');
+</script>
+</html>

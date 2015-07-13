@@ -10,14 +10,105 @@
 		line-height: 1.25rem;
 	}
 	.bud-pic-base {
-		background-image: url("img/foxiang.jpg");
 		width: 100%;
-		height: 100%;
+		height: 25rem;
+		background-image: url("img/foxiang.jpg");
+		background-size: cover;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='img/foxiang.jpg');
+	}
+	.bud-slogan-base {
+		margin-top: 1rem;
+		margin-left: 2rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		text-align: center;
+		width: 80%;
+		font-size: 0.75rem;
+		line-height: 1rem;
+		border: solid 2px black;
+	}
+	.bud-name-base {
+		margin-top: 1rem;
+		margin-left: 2rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		text-align: center;
+		width: 80%;
+		font-size: 0.75rem;
+		line-height: 1rem;
+		border: solid 2px black;
+	}
+	.bud-name-input-base {
+		height: 1rem;
+		line-height: 1.25rem;
+		width: auto;
+	}
+	.bud-text-base {
+		margin-top: 1rem;
+		margin-left: 2rem;
+		padding-top: 0.5rem;
+		width: 80%;
+		font-size: 0.75rem;
+		line-height: 1rem;
+		border: solid 2px black;
+	}
+	.bud-button-base {
+		margin-top: 1rem;
+		margin-left: 2rem;
+		width: 80%;
+		border: solid 2px black;
+	}
+	.bud-foot-button-base {
+		margin-top: 1rem;
+		width: 100%;
+		height: 2rem;
+		border: solid 2px black;
+	}
+	.bud-button-decoration{
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		font-size: 1rem;
+		width: 100%;
+		height: auto;
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+	.bud-double-button-decoration{
+		float: left;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		font-size: 1rem;
+		width: 50%;
+		height: auto;
+		font-size: 1rem;
+		line-height: 2rem;
 	}
 </style>
-<body>
+<body class="body-base">
 	<div class="bud-title">释迦牟尼佛</div>
 	<div class="bud-pic-base">
+	</div>
+	<div>
+	<div class="bud-slogan-base">
+	拜:礼拜一拜罪灭河沙；念佛一声增无量
+	</div>
+	<div class="bud-slogan-base">
+		礼佛:【释迦摩尼】
+	</div>
+	<div class="bud-name-base">
+		姓名: <input class="bud-name-input-base" type="text" />
+	</div>
+	<div class="bud-text-base">
+		回向:愿以此功德。庄严佛净土。上报四重恩。下济三途苦。若有见闻者。悉发菩提心。尽此一报身。
+		同生极乐国。愿得智慧真明了，普愿罪障息消除，世世常行菩萨道。
+	</div>
+	<div class="bud-button-base">
+		<button class="bud-button-decoration">礼佛毕提交回向</button>
+	</div>
+	<div class="bud-foot-button-base">
+		<button class="bud-double-button-decoration">礼佛</button>
+		<button class="bud-double-button-decoration">回向</button>
+	</div>
 	</div>
 </body>
 <script type="text/javascript">
